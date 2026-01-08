@@ -54,7 +54,7 @@ const projects = {
       description: "Experiencia RV donde se debe limpiar un hospital",
       technologies: ["Unity", "C#", "Blender"],
       preview: "recursos/Limpieza.mp4",
-      github: "",
+      github: "https://github.com/Danxsh02/PARCIAL-FINAL-VR",
       details:
         "Esta experiencia busca que el usuario aprenda sobre la clasificación de residuos en una experiencia inmersiva donde debera limpiar un hospital por completo",
     },
@@ -378,6 +378,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Make openModal function global
 window.openModal = openModal;
+
 
 
 
