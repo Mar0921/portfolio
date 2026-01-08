@@ -48,6 +48,28 @@ const projects = {
         "Se busca brindarle una experiencia inmersiva al usuario, donde este pueda interactuar con los items de la carta al momento de scanearla y asi conocer más detalles sobre la información que se brinda en la misma.",
     },
 
+    {
+      id: "6",
+      title: "Limpieza Hospital",
+      description: "Experiencia RV donde se debe limpiar un hospital",
+      technologies: ["Unity", "C#", "Blender"],
+      preview: "recursos/Limpieza.mp4",
+      github: "",
+      details:
+        "Esta experiencia busca que el usuario aprenda sobre la clasificación de residuos en una experiencia inmersiva donde debera limpiar un hospital por completo",
+    },
+
+            {
+      id: "6",
+      title: "Zylo",
+      description: "Zylo, tu mascota virtual",
+      technologies: ["Unity", "C#", "Blender", "illustrator"],
+      preview: "recursos/zylo.mp4",
+      github: "",
+      details:
+        "Zylo es una mascota que habita un entorno AR mediante el cual el usuario puede interactuar con el ",
+    },
+
   ],
   diseño: [
     {
@@ -356,4 +378,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Make openModal function global
 window.openModal = openModal;
+
 
