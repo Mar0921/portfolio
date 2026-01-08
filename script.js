@@ -37,7 +37,16 @@ const projects = {
       details:
         "Royal Pet busca conectar de manera divertida con los amantes de las mascotas. Combina mecánicas simples y dinámicas, pero con un toque competitivo.",
     },
-
+    {
+      id: "5",
+      title: "Carta de Presentación",
+      description: "Experiencia AR carta de presentación",
+      technologies: ["Unity", "C#", "Blender", "Photoshop"],
+      preview: "recursos/Carta-presentación.mp4",
+      github: "",
+      details:
+        "Se busca brindarle una experiencia inmersiva al usuario, donde este pueda interactuar con los items de la carta al momento de scanearla y asi conocer más detalles sobre la información que se brinda en la misma.",
+    },
 
   ],
   diseño: [
@@ -347,3 +356,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Make openModal function global
 window.openModal = openModal;
+
