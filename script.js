@@ -60,7 +60,7 @@ const projects = {
     },
 
             {
-      id: "6",
+      id: "7",
       title: "Zylo",
       description: "Zylo, tu mascota virtual",
       technologies: ["Unity", "C#", "Blender", "illustrator"],
@@ -378,5 +378,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Make openModal function global
 window.openModal = openModal;
+
 
 
