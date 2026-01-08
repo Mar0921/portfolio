@@ -28,7 +28,7 @@
               <polyline points="16,18 22,12 16,6"></polyline>
               <polyline points="8,6 2,12 8,18"></polyline>
             </svg>
-            Proyectos
+            <span data-lang="es">Proyectos</span><span data-lang="en" style="display: none;">Projects</span>
           </button>
           <button class="nav-link" data-target="skills-section">
             <svg
@@ -42,7 +42,7 @@
                 d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
               ></path>
             </svg>
-            Herramientas
+            <span data-lang="es">Herramientas</span><span data-lang="en" style="display: none;">Tools</span>
           </button>
           <button class="nav-link" data-target="about-section">
             <svg
@@ -55,9 +55,14 @@
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
-            Sobre mí
+            <span data-lang="es">Sobre mí</span><span data-lang="en" style="display: none;">About me</span>
           </button>
         </div>
+
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="lang-toggle">
+          <span id="lang-text">EN</span>
+        </button>
       </div>
     </nav>
 
@@ -66,14 +71,14 @@
       <!-- Hero Section -->
       <section class="hero-section">
         <h1 class="hero-title">
-          Hi, I'm
+          <span data-lang="es">Hola, soy</span><span data-lang="en" style="display: none;">Hi, I'm</span>
           <span class="hero-name">
             Mariana
             <span class="hero-badge">MP</span>
           </span>
         </h1>
 
-        <p class="hero-subtitle">Multimedia engineer</p>
+        <p class="hero-subtitle"><span data-lang="es">Ingeniera Multimedia</span><span data-lang="en" style="display: none;">Multimedia engineer</span></p>
 
         <!-- Social Links -->
         <div class="social-links">
@@ -123,7 +128,7 @@
               <line x1="16" y1="17" x2="8" y2="17"></line>
               <polyline points="10,9 9,9 8,9"></polyline>
             </svg>
-            Resume
+            <span data-lang="es">Resumen</span><span data-lang="en" style="display: none;">Resume</span>
           </button>
         </div>
 
@@ -269,7 +274,7 @@
 
       <!-- Section Navigation - Projects -->
       <section class="section-nav" id="projects-nav">
-        <h2 class="section-title">Explora mi trabajo</h2>
+        <h2 class="section-title"><span data-lang="es">Explora mi trabajo</span><span data-lang="en" style="display: none;">Explore my work</span></h2>
         <div class="section-buttons">
           <button class="section-btn active" data-section="todos">
             <svg
@@ -285,7 +290,7 @@
               <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
               <rect x="7" y="7" width="10" height="10"></rect>
             </svg>
-            Todos
+            <span data-lang="es">Todos</span><span data-lang="en" style="display: none;">All</span>
           </button>
           <button class="section-btn" data-section="codigo">
             <svg
@@ -298,7 +303,7 @@
               <polyline points="16,18 22,12 16,6"></polyline>
               <polyline points="8,6 2,12 8,18"></polyline>
             </svg>
-            Código
+            <span data-lang="es">Código</span><span data-lang="en" style="display: none;">Code</span>
           </button>
           <button class="section-btn" data-section="diseño">
             <svg
@@ -312,7 +317,7 @@
                 d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
               ></path>
             </svg>
-            Diseño
+            <span data-lang="es">Diseño</span><span data-lang="en" style="display: none;">Design</span>
           </button>
         </div>
       </section>
@@ -329,7 +334,7 @@
       <!-- Skills Section -->
       <section class="skills-section" id="skills-section">
         <div class="skills-container">
-          <h2 class="skills-title">Mis Herramientas</h2>
+          <h2 class="skills-title"><span data-lang="es">Mis Herramientas</span><span data-lang="en" style="display: none;">My Tools</span></h2>
           <div class="skills-grid">
             <!-- Design & Creative -->
             <div class="skill-category">
@@ -345,7 +350,7 @@
                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
                   ></path>
                 </svg>
-                <h3 class="category-title">Diseño & Creatividad</h3>
+                <h3 class="category-title"><span data-lang="es">Diseño & Creatividad</span><span data-lang="en" style="display: none;">Design & Creativity</span></h3>
               </div>
               <div class="skills-list">
                 <div class="skill-item">
@@ -392,7 +397,7 @@
                   <polyline points="16,18 22,12 16,6"></polyline>
                   <polyline points="8,6 2,12 8,18"></polyline>
                 </svg>
-                <h3 class="category-title">Programación</h3>
+                <h3 class="category-title"><span data-lang="es">Programación</span><span data-lang="en" style="display: none;">Programming</span></h3>
               </div>
               <div class="skills-list">
                 <div class="skill-item">
@@ -436,7 +441,7 @@
                   <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
                   <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
                 </svg>
-                <h3 class="category-title">Bases de Datos</h3>
+                <h3 class="category-title"><span data-lang="es">Bases de Datos</span><span data-lang="en" style="display: none;">Databases</span></h3>
               </div>
               <div class="skills-list">
                 <div class="skill-item">
@@ -464,7 +469,7 @@
                     d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
                   ></path>
                 </svg>
-                <h3 class="category-title">Herramientas</h3>
+                <h3 class="category-title"><span data-lang="es">Herramientas</span><span data-lang="en" style="display: none;">Tools</span></h3>
               </div>
               <div class="skills-list">
                 <div class="skill-item">
@@ -478,6 +483,18 @@
                 <div class="skill-item">
                   <span class="skill-symbol">Np</span>
                   <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-symbol">Wp</span>
+                  <span class="skill-name">WordPress</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-symbol">Wc</span>
+                  <span class="skill-name">WooCommerce</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-symbol">Xa</span>
+                  <span class="skill-name">XAMPP</span>
                 </div>
               </div>
             </div>
@@ -499,14 +516,12 @@
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
           </div>
-          <h2 class="about-title">Sobre mí</h2>
+          <h2 class="about-title"><span data-lang="es">Sobre mí</span><span data-lang="en" style="display: none;">About me</span></h2>
           <p class="about-description">
-            Ingeniera Multimedia apasionada por la tecnología
+            <span data-lang="es">Ingeniera Multimedia apasionada por la tecnología</span><span data-lang="en" style="display: none;">Multimedia engineer passionate about technology</span>
           </p>
           <p class="about-details">
-            Soy una Ingeniera Multimedia con experiencia en desarrollo web y
-            diseño. Me apasiona crear soluciones digitales que combinen
-            funcionalidad y estética.
+            <span data-lang="es">Soy una Ingeniera Multimedia con experiencia en desarrollo web y diseño. Me apasiona crear soluciones digitales que combinen funcionalidad y estética.</span><span data-lang="en" style="display: none;">I am a Multimedia Engineer with experience in web development and design. I am passionate about creating digital solutions that combine functionality and aesthetics.</span>
           </p>
           <button class="contact-cta-btn personal-btn" data-section="contacto">
             <svg
@@ -521,7 +536,7 @@
               ></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            Contáctame
+            <span data-lang="es">Contáctame</span><span data-lang="en" style="display: none;">Contact me</span>
           </button>
         </div>
       </section>
@@ -533,12 +548,12 @@
         style="display: none"
       >
         <div class="contact-container">
-          <h2 class="contact-title">Contacto</h2>
+          <h2 class="contact-title"><span data-lang="es">Contacto</span><span data-lang="en" style="display: none;">Contact</span></h2>
           <div class="contact-content">
             <div class="contact-form-container">
               <form class="contact-form" id="contact-form">
                 <div class="form-group">
-                  <label for="name">Tu Nombre</label>
+                  <label for="name"><span data-lang="es">Tu Nombre</span><span data-lang="en" style="display: none;">Your Name</span></label>
                   <input
                     type="text"
                     id="name"
@@ -548,7 +563,7 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="email">Tu Correo</label>
+                  <label for="email"><span data-lang="es">Tu Correo</span><span data-lang="en" style="display: none;">Your Email</span></label>
                   <input
                     type="email"
                     id="email"
@@ -558,7 +573,7 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="message">Tu Mensaje</label>
+                  <label for="message"><span data-lang="es">Tu Mensaje</span><span data-lang="en" style="display: none;">Your Message</span></label>
                   <textarea
                     id="message"
                     name="message"
@@ -568,7 +583,7 @@
                   ></textarea>
                 </div>
                 <button type="submit" class="submit-btn">
-                  Enviar
+                  <span data-lang="es">Enviar</span><span data-lang="en" style="display: none;">Send</span>
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -583,7 +598,7 @@
             </div>
             <div class="contact-info">
               <div class="social-networks">
-                <h3>Redes Sociales</h3>
+                <h3><span data-lang="es">Redes Sociales</span><span data-lang="en" style="display: none;">Social Networks</span></h3>
                 <div class="social-icons">
                   <a
                     href="https://www.linkedin.com/in/mariana-parra-acosta/"

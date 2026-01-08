@@ -148,6 +148,26 @@ body::before {
   height: 16px;
 }
 
+/* Language Toggle */
+.lang-toggle {
+  background: rgba(10, 6, 18, 0.8);
+  border: 1px solid #374151;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.lang-toggle:hover {
+  background-color: #9333ea;
+  border-color: #9333ea;
+  transform: translateY(-2px);
+}
+
 /* Main Content */
 .main-content {
   padding-top: 4rem;
@@ -478,7 +498,7 @@ body::before {
 }
 
 .project-image {
-  height: 8rem;
+  height: 6rem;
   background: linear-gradient(135deg, #9333ea, #7c3aed);
   transition: all 0.3s ease;
 }
@@ -769,7 +789,7 @@ body::before {
   background-color: rgba(10, 6, 18, 0.95);
   backdrop-filter: blur(8px);
   border-radius: 0.5rem;
-  max-width: 36rem;
+  max-width: 48rem;
   width: 100%;
   max-height: 80vh;
   overflow-y: auto;
@@ -812,10 +832,16 @@ body::before {
 
 .modal-image {
   width: 100%;
-  max-height: 280px;
+  max-height: 400px;
   overflow: hidden;
   margin: 0 1.5rem 1rem;
   border-radius: 0.5rem;
+}
+
+.modal-image img,
+.modal-image video {
+  max-width: 100%;
+  height: auto;
 }
 
 .modal-description {
