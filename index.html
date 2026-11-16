@@ -1,792 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mariana Parra - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-brand">
-          <div class="nav-logo">MP</div>
-          <span class="nav-name">Mariana Parra</span>
-        </div>
-
-        <!-- Quick Access Navigation -->
-        <div class="nav-links">
-          <button class="nav-link" data-target="projects-nav">
-            <svg
-              class="nav-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <polyline points="16,18 22,12 16,6"></polyline>
-              <polyline points="8,6 2,12 8,18"></polyline>
-            </svg>
-            <span data-lang="es">Proyectos</span><span data-lang="en" style="display: none;">Projects</span>
-          </button>
-          <button class="nav-link" data-target="skills-section">
-            <svg
-              class="nav-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-              ></path>
-            </svg>
-            <span data-lang="es">Herramientas</span><span data-lang="en" style="display: none;">Tools</span>
-          </button>
-          <button class="nav-link" data-target="about-section">
-            <svg
-              class="nav-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-            <span data-lang="es">Sobre mí</span><span data-lang="en" style="display: none;">About me</span>
-          </button>
-          <button class="nav-link" data-target="certificates-section">
-            <svg
-              class="nav-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <rect x="3" y="4" width="18" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-            </svg>
-            <span data-lang="es">Certificados</span><span data-lang="en" style="display: none;">Certificates</span>
-          </button>
-        </div>
-
-        <!-- Language Toggle -->
-        <button class="lang-toggle" id="lang-toggle">
-          <span id="lang-text">EN</span>
-        </button>
-      </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariana Parra · Ingeniera Multimedia</title>
+<meta name="description" content="Portafolio de Mariana Parra, Ingeniera Multimedia: desarrollo web, realidad aumentada y diseño.">
+<script>try{var s=localStorage.getItem("theme");document.documentElement.dataset.theme=s||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">mariana parra <small>v. 2026</small></a>
+    <nav class="links" aria-label="Principal">
+      <a href="#proyectos" data-i18n="nav_projects"></a>
+      <a href="#herramientas" data-i18n="nav_tools"></a>
+      <a href="#certificados" data-i18n="nav_certs"></a>
+      <a href="#contacto" data-i18n="nav_contact"></a>
     </nav>
-
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <h1 class="hero-title">
-          <span data-lang="es">Hola, soy</span><span data-lang="en" style="display: none;">Hi, I'm</span>
-          <span class="hero-name">
-            Mariana
-            <span class="hero-badge">MP</span>
-          </span>
-        </h1>
-
-        <p class="hero-subtitle"><span data-lang="es">Ingeniera Multimedia</span><span data-lang="en" style="display: none;">Multimedia engineer</span></p>
-
-        <!-- Social Links -->
-        <div class="social-links">
-          <button class="social-btn">
-            <svg
-              class="social-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-              ></path>
-            </svg>
-            GitHub
-          </button>
-          <button class="social-btn">
-            <svg
-              class="social-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-              ></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-            LinkedIn
-          </button>
-          <button class="social-btn">
-            <svg
-              class="social-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-              ></path>
-              <polyline points="14,2 14,8 20,8"></polyline>
-              <line x1="16" y1="13" x2="8" y2="13"></line>
-              <line x1="16" y1="17" x2="8" y2="17"></line>
-              <polyline points="10,9 9,9 8,9"></polyline>
-            </svg>
-            <span data-lang="es">Resumen</span><span data-lang="en" style="display: none;">Resume</span>
-          </button>
-        </div>
-
-        <!-- Tools Carousel -->
-        <div class="tools-carousel">
-          <!-- Primera fila: Derecha a Izquierda -->
-          <div class="tools-row">
-            <div class="tools-track tools-track-rtl">
-              <!-- Primera fila - Design & Creative -->
-              <div class="tool-item">
-                <span class="tool-symbol">Ps</span>
-                <span class="tool-name">Photoshop</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Ai</span>
-                <span class="tool-name">Illustrator</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Id</span>
-                <span class="tool-name">InDesign</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Ae</span>
-                <span class="tool-name">After Effects</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Bl</span>
-                <span class="tool-name">Blender</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Fg</span>
-                <span class="tool-name">Figma</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Xd</span>
-                <span class="tool-name">Adobe XD</span>
-              </div>
-              <!-- Duplicados para loop seamless -->
-              <div class="tool-item">
-                <span class="tool-symbol">Ps</span>
-                <span class="tool-name">Photoshop</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Ai</span>
-                <span class="tool-name">Illustrator</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Id</span>
-                <span class="tool-name">InDesign</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Ae</span>
-                <span class="tool-name">After Effects</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Bl</span>
-                <span class="tool-name">Blender</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Fg</span>
-                <span class="tool-name">Figma</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Xd</span>
-                <span class="tool-name">Adobe XD</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Segunda fila: Izquierda a Derecha -->
-          <div class="tools-row">
-            <div class="tools-track tools-track-ltr">
-              <!-- Segunda fila - Programming & Data -->
-              <div class="tool-item">
-                <span class="tool-symbol">Jv</span>
-                <span class="tool-name">Java</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Py</span>
-                <span class="tool-name">Python</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Cs</span>
-                <span class="tool-name">C#</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Js</span>
-                <span class="tool-name">JavaScript</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Re</span>
-                <span class="tool-name">React</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Mg</span>
-                <span class="tool-name">MongoDB</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Sq</span>
-                <span class="tool-name">MySQL</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">R</span>
-                <span class="tool-name">R</span>
-              </div>
-              <!-- Duplicados para loop seamless -->
-              <div class="tool-item">
-                <span class="tool-symbol">Jv</span>
-                <span class="tool-name">Java</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Py</span>
-                <span class="tool-name">Python</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Cs</span>
-                <span class="tool-name">C#</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Js</span>
-                <span class="tool-name">JavaScript</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Re</span>
-                <span class="tool-name">React</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Mg</span>
-                <span class="tool-name">MongoDB</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">Sq</span>
-                <span class="tool-name">MySQL</span>
-              </div>
-              <div class="tool-item">
-                <span class="tool-symbol">R</span>
-                <span class="tool-name">R</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section Navigation - Projects -->
-      <section class="section-nav" id="projects-nav">
-        <h2 class="section-title"><span data-lang="es">Explora mi trabajo</span><span data-lang="en" style="display: none;">Explore my work</span></h2>
-        <div class="section-buttons">
-          <button class="section-btn active" data-section="todos">
-            <svg
-              class="section-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
-              <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
-              <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
-              <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
-              <rect x="7" y="7" width="10" height="10"></rect>
-            </svg>
-            <span data-lang="es">Todos</span><span data-lang="en" style="display: none;">All</span>
-          </button>
-          <button class="section-btn" data-section="codigo">
-            <svg
-              class="section-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <polyline points="16,18 22,12 16,6"></polyline>
-              <polyline points="8,6 2,12 8,18"></polyline>
-            </svg>
-            <span data-lang="es">Código</span><span data-lang="en" style="display: none;">Code</span>
-          </button>
-          <button class="section-btn" data-section="diseño">
-            <svg
-              class="section-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-              ></path>
-            </svg>
-            <span data-lang="es">Diseño</span><span data-lang="en" style="display: none;">Design</span>
-          </button>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section
-        class="projects-section"
-        id="projects-section"
-        style="display: block"
-      >
-        <div class="projects-grid" id="projects-grid"></div>
-      </section>
-
-      <!-- Skills Section -->
-      <section class="skills-section" id="skills-section">
-        <div class="skills-container">
-          <h2 class="skills-title"><span data-lang="es">Mis Herramientas</span><span data-lang="en" style="display: none;">My Tools</span></h2>
-          <div class="skills-grid">
-            <!-- Design & Creative -->
-            <div class="skill-category">
-              <div class="category-header">
-                <svg
-                  class="category-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                  ></path>
-                </svg>
-                <h3 class="category-title"><span data-lang="es">Diseño & Creatividad</span><span data-lang="en" style="display: none;">Design & Creativity</span></h3>
-              </div>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <span class="skill-symbol">Ps</span>
-                  <span class="skill-name">Adobe Photoshop</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Ai</span>
-                  <span class="skill-name">Adobe Illustrator</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Id</span>
-                  <span class="skill-name">Adobe InDesign</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Ae</span>
-                  <span class="skill-name">After Effects</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Fg</span>
-                  <span class="skill-name">Figma</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Xd</span>
-                  <span class="skill-name">Adobe XD</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Bl</span>
-                  <span class="skill-name">Blender</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Programming -->
-            <div class="skill-category">
-              <div class="category-header">
-                <svg
-                  class="category-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <polyline points="16,18 22,12 16,6"></polyline>
-                  <polyline points="8,6 2,12 8,18"></polyline>
-                </svg>
-                <h3 class="category-title"><span data-lang="es">Programación</span><span data-lang="en" style="display: none;">Programming</span></h3>
-              </div>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <span class="skill-symbol">Js</span>
-                  <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Re</span>
-                  <span class="skill-name">React</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Py</span>
-                  <span class="skill-name">Python</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Jv</span>
-                  <span class="skill-name">Java</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Cs</span>
-                  <span class="skill-name">C#</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">R</span>
-                  <span class="skill-name">R</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Databases -->
-            <div class="skill-category">
-              <div class="category-header">
-                <svg
-                  class="category-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
-                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
-                </svg>
-                <h3 class="category-title"><span data-lang="es">Bases de Datos</span><span data-lang="en" style="display: none;">Databases</span></h3>
-              </div>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <span class="skill-symbol">Mg</span>
-                  <span class="skill-name">MongoDB</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Sq</span>
-                  <span class="skill-name">MySQL</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tools & Others -->
-            <div class="skill-category">
-              <div class="category-header">
-                <svg
-                  class="category-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
-                  ></path>
-                </svg>
-                <h3 class="category-title"><span data-lang="es">Herramientas</span><span data-lang="en" style="display: none;">Tools</span></h3>
-              </div>
-              <div class="skills-list">
-                <div class="skill-item">
-                  <span class="skill-symbol">Gt</span>
-                  <span class="skill-name">Git</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Vs</span>
-                  <span class="skill-name">VS Code</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Np</span>
-                  <span class="skill-name">Node.js</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Wp</span>
-                  <span class="skill-name">WordPress</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Wc</span>
-                  <span class="skill-name">WooCommerce</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-symbol">Xa</span>
-                  <span class="skill-name">XAMPP</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Certificates Section -->
-      <section class="certificates-section" id="certificates-section">
-        <h2 class="section-title"><span data-lang="es">Certificados</span><span data-lang="en" style="display: none;">Certificates</span></h2>
-        <div class="certificates-grid">
-          <div class="certificate-card">
-            <div class="certificate-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="8" r="6"></circle>
-                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"></path>
-              </svg>
-            </div>
-            <h3 class="certificate-title">SheShips Hackaton</h3>
-            <p class="certificate-issuer">SheShips Organization</p>
-            <a href="https://app.sheships.org/c/baymax/2c984c818d1b4ed09335fb300c5a1def" target="_blank" class="certificate-link">
-              <span data-lang="es">Verificar</span><span data-lang="en" style="display: none;">Verify</span>
-            </a>
-            <a href="recursos/sheships.pdf" target="_blank" class="certificate-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14,2 14,8 20,8"></polyline>
-                <line x1="12" y1="18" x2="12" y2="12"></line>
-                <line x1="9" y1="15" x2="12" y2="12"></line>
-                <line x1="15" y1="15" x2="12" y2="12"></line>
-              </svg>
-              <span data-lang="es">Ver PDF</span><span data-lang="en" style="display: none;">View PDF</span>
-            </a>
-          </div>
-          <div class="certificate-card">
-            <div class="certificate-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                <path d="M2 17l10 5 10-5"></path>
-                <path d="M2 12l10 5 10-5"></path>
-              </svg>
-            </div>
-            <h3 class="certificate-title">Claude Code in Action</h3>
-            <p class="certificate-issuer">Anthropic / Skilljar</p>
-            <a href="http://verify.skilljar.com/c/4fr5esbynuwq" target="_blank" class="certificate-link">
-              <span data-lang="es">Verificar</span><span data-lang="en" style="display: none;">Verify</span>
-            </a>
-            <a href="recursos/ClaudeCode.pdf" target="_blank" class="certificate-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14,2 14,8 20,8"></polyline>
-                <line x1="12" y1="18" x2="12" y2="12"></line>
-                <line x1="9" y1="15" x2="12" y2="12"></line>
-                <line x1="15" y1="15" x2="12" y2="12"></line>
-              </svg>
-              <span data-lang="es">Ver PDF</span><span data-lang="en" style="display: none;">View PDF</span>
-            </a>
-          </div>
-          <div class="certificate-card">
-            <div class="certificate-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-              </svg>
-            </div>
-            <h3 class="certificate-title">Introduction to Model Protocol</h3>
-            <p class="certificate-issuer">Anthropic / Skilljar</p>
-            <a href="http://verify.skilljar.com/c/zqz32zo6z2bt" target="_blank" class="certificate-link">
-              <span data-lang="es">Verificar</span><span data-lang="en" style="display: none;">Verify</span>
-            </a>
-            <a href="recursos/ITMP.pdf" target="_blank" class="certificate-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14,2 14,8 20,8"></polyline>
-                <line x1="12" y1="18" x2="12" y2="12"></line>
-                <line x1="9" y1="15" x2="12" y2="12"></line>
-                <line x1="15" y1="15" x2="12" y2="12"></line>
-              </svg>
-              <span data-lang="es">Ver PDF</span><span data-lang="en" style="display: none;">View PDF</span>
-            </a>
-          </div>
-          <div class="certificate-card">
-            <div class="certificate-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="12"></line>
-                <line x1="12" y1="16" x2="12.01" y2="16"></line>
-              </svg>
-            </div>
-            <h3 class="certificate-title">Claude 101</h3>
-            <p class="certificate-issuer">Anthropic / Skilljar</p>
-            <a href="http://verify.skilljar.com/c/2iigt8s863ph" target="_blank" class="certificate-link">
-              <span data-lang="es">Verificar</span><span data-lang="en" style="display: none;">Verify</span>
-            </a>
-            <a href="recursos/101.pdf" target="_blank" class="certificate-btn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14,2 14,8 20,8"></polyline>
-                <line x1="12" y1="18" x2="12" y2="12"></line>
-                <line x1="9" y1="15" x2="12" y2="12"></line>
-                <line x1="15" y1="15" x2="12" y2="12"></line>
-              </svg>
-              <span data-lang="es">Ver PDF</span><span data-lang="en" style="display: none;">View PDF</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="about-section" id="about-section">
-        <div class="about-content">
-          <div class="about-avatar">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <h2 class="about-title"><span data-lang="es">Sobre mí</span><span data-lang="en" style="display: none;">About me</span></h2>
-          <p class="about-description">
-            <span data-lang="es">Ingeniera Multimedia apasionada por la tecnología</span><span data-lang="en" style="display: none;">Multimedia engineer passionate about technology</span>
-          </p>
-          <p class="about-details">
-            <span data-lang="es">Soy una Ingeniera Multimedia con experiencia en desarrollo web y diseño. Me apasiona crear soluciones digitales que combinen funcionalidad y estética.</span><span data-lang="en" style="display: none;">I am a Multimedia Engineer with experience in web development and design. I am passionate about creating digital solutions that combine functionality and aesthetics.</span>
-          </p>
-          <button class="contact-cta-btn personal-btn" data-section="contacto">
-            <svg
-              class="personal-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-              ></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <span data-lang="es">Contáctame</span><span data-lang="en" style="display: none;">Contact me</span>
-          </button>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section
-        class="contact-section"
-        id="contact-section"
-        style="display: none"
-      >
-        <div class="contact-container">
-          <h2 class="contact-title"><span data-lang="es">Contacto</span><span data-lang="en" style="display: none;">Contact</span></h2>
-          <div class="contact-content">
-            <div class="contact-form-container">
-              <form class="contact-form" id="contact-form">
-                <div class="form-group">
-                  <label for="name"><span data-lang="es">Tu Nombre</span><span data-lang="en" style="display: none;">Your Name</span></label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Escribe tu nombre"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email"><span data-lang="es">Tu Correo</span><span data-lang="en" style="display: none;">Your Email</span></label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Escribe tu correo electrónico"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message"><span data-lang="es">Tu Mensaje</span><span data-lang="en" style="display: none;">Your Message</span></label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Escribe tu mensaje aquí"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="submit-btn">
-                  <span data-lang="es">Enviar</span><span data-lang="en" style="display: none;">Send</span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
-                  </svg>
-                </button>
-              </form>
-            </div>
-            <div class="contact-info">
-              <div class="social-networks">
-                <h3><span data-lang="es">Redes Sociales</span><span data-lang="en" style="display: none;">Social Networks</span></h3>
-                <div class="social-icons">
-                  <a
-                    href="https://www.linkedin.com/in/mariana-parra-acosta/"
-                    target="_blank"
-                    class="social-icon-link"
-                  >
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path
-                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                      ></path>
-                      <rect x="2" y="9" width="4" height="12"></rect>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                  </a>
-                  <a
-                    href="https://github.com/Mar0921"
-                    target="_blank"
-                    class="social-icon-link"
-                  >
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a
-                    href="https://www.canva.com/design/DAGGWaFMiDE/8Y1G796lidXWR0dBEzC7KQ/edit?utm_content=DAGGWaFMiDE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                    class="social-icon-link"
-                  >
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path
-                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                      ></path>
-                      <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <p>Mariana Parra - Portafolio</p>
-      </footer>
-    </main>
-
-    <!-- Project Modal -->
-    <div class="modal" id="project-modal" style="display: none">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="modal-title"></h2>
-          <button class="modal-close" id="modal-close">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <line x1="18" y1="6" x2="6" y2="18"></line>
-              <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-          </button>
-        </div>
-        <div class="modal-image" id="modal-image"></div>
-        <p class="modal-description" id="modal-description"></p>
-        <div class="modal-technologies" id="modal-technologies"></div>
-        <div class="modal-buttons" id="modal-buttons"></div>
-      </div>
+    <div class="ctl">
+      <button class="pill" id="mode" aria-label="Modo claro / oscuro"></button>
+      <button class="pill" id="lang-toggle" aria-label="Cambiar idioma / Change language">EN</button>
     </div>
+  </div>
+</header>
 
-    <script src="script.js"></script>
-  </body>
+<main id="top">
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1 id="name" aria-label="Mariana Parra">Mariana Parra <span class="star" aria-hidden="true">★</span></h1>
+      <p class="role" data-i18n="role"></p>
+      <p class="lead" data-i18n="lead"></p>
+      <ul class="quick">
+        <li><a href="#proyectos" data-i18n="nav_projects"></a></li>
+        <li><a href="mailto:mar0921p@gmail.com">Email</a></li>
+        <li><a href="https://github.com/Mar0921" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mariana-parra-acosta/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.canva.com/design/DAGGWaFMiDE/8Y1G796lidXWR0dBEzC7KQ/edit?utm_content=DAGGWaFMiDE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" data-i18n="resume"></a></li>
+      </ul>
+    </div>
+    <figure class="photo" id="photo">
+      <!-- Pon tu foto en img/foto.jpg -->
+      <img src="img/foto.jpeg" alt="Mariana Parra">
+      <span class="mp" aria-hidden="true">MP</span>
+      <figcaption class="sticker" data-i18n="hola"></figcaption>
+    </figure>
+  </section>
+
+  <section class="wrap sec" id="recientes">
+    <h2 data-i18n="latest_t"></h2>
+    <ul class="latest" id="latest"></ul>
+  </section>
+
+  <section class="wrap sec" id="proyectos">
+    <h2 data-i18n="projects_t"></h2>
+    <p class="sub" data-i18n="projects_s"></p>
+    <div class="filters" id="filters" role="group"></div>
+    <div class="grid" id="projects-grid"></div>
+  </section>
+
+  <section class="wrap sec" id="herramientas">
+    <h2 data-i18n="tools_t"></h2>
+    <div class="skills" id="skills-grid"></div>
+  </section>
+
+  <section class="wrap sec" id="certificados">
+    <h2 data-i18n="certs_t"></h2>
+    <div class="certs" id="certs-grid"></div>
+  </section>
+
+  <section class="wrap sec about" id="sobre-mi">
+    <h2 data-i18n="about_t"></h2>
+    <div><p class="big" data-i18n="about_1"></p><p data-i18n="about_2"></p></div>
+  </section>
+
+  <section class="wrap sec" id="contacto">
+    <div class="contact">
+      <div class="c-left">
+        <span class="spin" aria-hidden="true">★</span>
+        <h2 data-i18n="contact_t"></h2>
+        <p class="sub" data-i18n="contact_s"></p>
+        <button class="mail" id="copy-mail" type="button"><span>mar0921p@gmail.com</span><span class="copy" id="copy-label"></span></button>
+        <ul class="quick">
+          <li><a href="https://github.com/Mar0921" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mariana-parra-acosta/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.canva.com/design/DAGGWaFMiDE/8Y1G796lidXWR0dBEzC7KQ/edit?utm_content=DAGGWaFMiDE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" data-i18n="resume"></a></li>
+        </ul>
+      </div>
+      <form class="form c-form" id="contact-form">
+        <label><span data-i18n="f_name"></span><input name="name" required autocomplete="name"></label>
+      <label><span data-i18n="f_email"></span><input name="email" type="email" required autocomplete="email"></label>
+      <label class="full"><span data-i18n="f_msg"></span><textarea name="message" rows="5" required></textarea></label>
+      <button class="pill pri" type="submit" data-i18n="send"></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="ticker" aria-hidden="true"><div class="tick" id="tick"></div></div>
+
+<footer class="wrap foot"><span class="star" aria-hidden="true">★</span>© 2026 Mariana Parra<span class="star" aria-hidden="true">★</span><a href="mailto:mar0921p@gmail.com">mar0921p@gmail.com</a></footer>
+
+<dialog id="modal" aria-labelledby="m-title">
+  <div class="m-in">
+    <button class="m-x" id="m-close" aria-label="Cerrar">&times;</button>
+    <div class="m-media" id="m-media"></div>
+    <h3 id="m-title"></h3>
+    <p id="m-desc"></p>
+    <div class="tags" id="m-tags"></div>
+    <div class="m-btns" id="m-btns"></div>
+  </div>
+</dialog>
+<script src="script.js"></script>
+</body>
 </html>
