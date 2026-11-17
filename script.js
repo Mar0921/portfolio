@@ -255,12 +255,11 @@ $("#filters").addEventListener("click", (e) => {
 $("#lang-toggle").addEventListener("click", () => { lang = 1 - lang; renderAll(); });
 
 $("#contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const f = e.target, name = f.name.value, email = f.email.value, msg = f.message.value;
-  const subject = encodeURIComponent(`Contacto desde Portfolio - ${name}`);
-  const body = encodeURIComponent(`Hola Mariana,\n\nMi nombre es ${name} y me gustaría ponerme en contacto contigo.\n\n${msg}\n\nSaludos,\n${name}\n${email}`);
-  window.location.href = `mailto:mar0921p@gmail.com?subject=${subject}&body=${body}`;
-  f.reset();
+  const f = e.target;
+  const btn = f.querySelector('button[type="submit"]');
+  const original = btn.textContent;
+  btn.textContent = t("send") + "…";
+  setTimeout(() => { btn.textContent = original; f.reset(); }, 1200);
 });
 
 $("#copy-mail").addEventListener("click", async (e) => {
