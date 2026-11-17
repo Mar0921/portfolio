@@ -254,14 +254,6 @@ $("#filters").addEventListener("click", (e) => {
 });
 $("#lang-toggle").addEventListener("click", () => { lang = 1 - lang; renderAll(); });
 
-$("#contact-form").addEventListener("submit", (e) => {
-  const f = e.target;
-  const btn = f.querySelector('button[type="submit"]');
-  const original = btn.textContent;
-  btn.textContent = t("send") + "…";
-  setTimeout(() => { btn.textContent = original; f.reset(); }, 1200);
-});
-
 $("#copy-mail").addEventListener("click", async (e) => {
   const b = e.currentTarget;
   try { await navigator.clipboard.writeText("mar0921p@gmail.com"); }
