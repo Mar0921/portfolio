@@ -175,6 +175,9 @@ dialog[open]{animation:in .25s both}
 .mail:hover .copy{transform:rotate(-6deg) scale(1.08)}
 .mail.ok .copy{background:var(--mint)}
 .c-form{max-width:none;background:var(--card);border:2px solid var(--ink);border-radius:22px;padding:1.5rem;box-shadow:8px 8px 0 var(--ink)}
+[data-fs-success],[data-fs-error]{grid-column:1/-1;text-align:center}
+[data-fs-success]{color:var(--mint);font-size:1rem;margin-top:.5rem}
+[data-fs-error]{color:var(--pink);font-size:.9rem;margin-top:.5rem}
 .ticker{margin-top:5rem;background:var(--sun);color:#1b1033;border-block:2px solid var(--ink);overflow:hidden;padding:.8rem 0;transform:rotate(-1.4deg)}
 .tick{display:flex;width:max-content;animation:slide 28s linear infinite}
 .ticker:hover .tick{animation-play-state:paused}
